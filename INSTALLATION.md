@@ -34,7 +34,7 @@ pip install -r requirements/clip_benchmark.txt
 
 ### 추가 설치 가이드라인
 ```
-flash-attn==2.3.6 설치:
+`flash-attn==2.3.6` 설치:
 ```
 다음 명령어로 설치하세요:
 ```
@@ -47,7 +47,7 @@ cd flash-attention
 git checkout v2.3.6
 python setup.py install
 ```
-mmcv-full==1.6.2 설치 (선택 사항, 세그멘테이션 기능용):
+`mmcv-full==1.6.2` 설치 (선택 사항, 세그멘테이션 기능용):
 ```
 pip install -U openmim
 mim install mmcv-full==1.6.2
@@ -61,6 +61,6 @@ pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation -
 에러 처리: `ModuleNotFoundError: No module named 'fused_layer_norm_cuda'`
 - 이 에러는 apex의 CUDA 확장이 성공적으로 설치되지 않았을 때 발생합니다.
 - 이를 해결하려면 apex를 제거한 후 PyTorch의 기본 RMSNorm 버전을 사용하세요.
-- 또는 setup.py 파일에 몇 가지 코드를 추가하고 다시 컴파일해보세요.
+- 또는 `setup.py` 파일에 몇 가지 코드를 추가하고 다시 컴파일해보세요.
 
 필요한 구성 요소에 따라 위의 단계를 실행하면 환경이 제대로 설정됩니다. 😊
