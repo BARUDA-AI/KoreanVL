@@ -58,7 +58,7 @@ git clone https://github.com/NVIDIA/apex.git
 git checkout 2386a912164b0c5cfcd8be7a2b890fbac5607c82  # 특정 커밋 ID로 이동
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
 ```
-에러 처리: ModuleNotFoundError: No module named 'fused_layer_norm_cuda'
+에러 처리: `ModuleNotFoundError: No module named 'fused_layer_norm_cuda'`
 - 이 에러는 apex의 CUDA 확장이 성공적으로 설치되지 않았을 때 발생합니다.
 - 이를 해결하려면 apex를 제거한 후 PyTorch의 기본 RMSNorm 버전을 사용하세요.
 - 또는 setup.py 파일에 몇 가지 코드를 추가하고 다시 컴파일해보세요.
