@@ -33,9 +33,9 @@ pip install -r requirements/clip_benchmark.txt
 ```
 
 ### 추가 설치 가이드라인
-```
+
 `flash-attn==2.3.6` 설치:
-```
+
 다음 명령어로 설치하세요:
 ```
 pip install flash-attn==2.3.6 --no-build-isolation
