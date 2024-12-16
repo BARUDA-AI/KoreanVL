@@ -1,5 +1,6 @@
-### 🛠️ 설치 방법
+## 🛠️ 설치 방법
 
+### 기본 설치 가이드라인
 **리포지토리 클론:**
 
 아래 명령어를 사용하여 리포지토리를 클론하세요:
@@ -31,14 +32,14 @@ clip_benchmark.txt는 기본 설치에는 포함되지 않습니다. clip_benchm
 pip install -r requirements/clip_benchmark.txt
 ```
 
-**추가 설치 지침:**
+### 추가 설치 가이드라인
 ```
 flash-attn==2.3.6 설치:
 ```
 다음 명령어로 설치하세요:
-
+```
 pip install flash-attn==2.3.6 --no-build-isolation
-
+```
 또는 소스에서 컴파일하여 설치할 수도 있습니다:
 ```
 git clone https://github.com/Dao-AILab/flash-attention.git
