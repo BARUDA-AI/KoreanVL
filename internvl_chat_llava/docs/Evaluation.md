@@ -1,16 +1,15 @@
-# Evaluation
+## 평가
 
-In LLaVA-1.5, we evaluate models on a diverse set of 12 benchmarks. To ensure the reproducibility, we evaluate the models with greedy decoding. We do not evaluate using beam search to make the inference process consistent with the chat demo of real-time outputs.
+LLaVA-1.5에서는 다양한 12가지 벤치마크를 사용해 모델을 평가합니다. 재현성을 보장하기 위해 **탐욕적 디코딩(greedy decoding)**으로 모델을 평가합니다. 실시간 출력을 제공하는 채팅 데모의 추론 과정과 일관성을 유지하기 위해 **빔 서치(beam search)**는 사용하지 않습니다.
 
-Currently, we mostly utilize the official toolkit or server for the evaluation.
+현재 대부분의 평가 작업은 공식 툴킷이나 서버를 활용하여 수행됩니다.
 
-## Evaluate on Custom Datasets
+### 커스텀 데이터셋 평가
 
-You can evaluate LLaVA on your custom datasets by converting your dataset to LLaVA's jsonl format, and evaluate using [`model_vqa.py`](https://github.com/haotian-liu/LLaVA/blob/main/llava/eval/model_vqa.py).
+LLaVA를 커스텀 데이터셋에서 평가하려면, 해당 데이터를 LLaVA의 jsonl 형식으로 변환한 후 model_vqa.py를 사용하여 평가하면 됩니다.
 
-Below we provide a general guideline for evaluating datasets with some common formats.
-
-1. Short-answer (e.g. VQAv2, MME).
+아래는 일반적인 형식의 데이터셋을 평가하기 위한 가이드라인입니다.
+	1.	단답형 데이터셋 (예: VQAv2, MME).
 
 ```
 <question>
